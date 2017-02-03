@@ -4,10 +4,10 @@
  * Implements hook_node_access().
  */
 function auto_fill_id_node_access($node, $op, $account) {
-  if (!is_string($node) && in_array('user-institucional', $account->roles)  && $node->type == 'compromiso_de_gestion') {
+/*  if (!is_string($node) && in_array('user-institucional', $account->roles)  && $node->type == 'compromiso_de_gestion') {
     $user_entity = user_load($account->uid);
     return $user_entity->field_institucion != $node->field_institucion ? NODE_ACCESS_DENY : NODE_ACCESS_ALLOW;
-  }
+  }*/
 }
 
 /**
