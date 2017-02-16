@@ -9,10 +9,10 @@
  */
 function vocabularios_taxonomy_default_vocabularies() {
   return array(
-    'tipos_de_institucion' => array(
-      'name' => 'Tipos de institución',
-      'machine_name' => 'tipos_de_institucion',
-      'description' => 'Tipos de institución',
+    'lista_1' => array(
+      'name' => 'Lista 1',
+      'machine_name' => 'lista_1',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
@@ -32,10 +32,79 @@ function vocabularios_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'tipos_instancia' => array(
-      'name' => 'Tipos de instancia',
-      'machine_name' => 'tipos_instancia',
-      'description' => 'Tipos de instancia',
+    'lista_2' => array(
+      'name' => 'Lista 2',
+      'machine_name' => 'lista_2',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'lista_3' => array(
+      'name' => 'Lista 3',
+      'machine_name' => 'lista_3',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'rol' => array(
+      'name' => 'Rol',
+      'machine_name' => 'rol',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'tipo_instancia' => array(
+      'name' => 'Tipo de instancia',
+      'machine_name' => 'tipo_instancia',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
