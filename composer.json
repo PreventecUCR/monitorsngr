@@ -1,0 +1,13 @@
+{
+    "name": "preventecucr/monitorsngr",
+    "require-dev": {
+        "geerlingguy/drupal-vm": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "Daniel Noyola",
+            "email": "danielnv18@gmail.com"
+        }
+    ],
+    "require": {}
+}

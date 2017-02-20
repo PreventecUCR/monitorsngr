@@ -12,3 +12,9 @@ sites/default/settings.inc
 /nbproject/
 
 _sites/
+
+/vendor/
+
+.vagrant/
+
+db_backups/
