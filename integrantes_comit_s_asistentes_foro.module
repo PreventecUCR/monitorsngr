@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Integrantes Comités / Asistentes Foro feature.
+ */
+
+include_once 'integrantes_comit_s_asistentes_foro.features.inc';
