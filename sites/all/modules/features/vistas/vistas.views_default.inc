@@ -1256,180 +1256,11 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'lista-asesorias';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_tema_necesidad_meta' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '70',
-      ),
-    ),
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '65',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '65',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Tema de necesidades en asesoría */
-  $handler->display->display_options['fields']['field_tema_necesidad_meta']['id'] = 'field_tema_necesidad_meta';
-  $handler->display->display_options['fields']['field_tema_necesidad_meta']['table'] = 'field_data_field_tema_necesidad_meta';
-  $handler->display->display_options['fields']['field_tema_necesidad_meta']['field'] = 'field_tema_necesidad_meta';
-  $handler->display->display_options['fields']['field_tema_necesidad_meta']['relationship'] = 'field_meta_target_id';
-  $handler->display->display_options['fields']['field_tema_necesidad_meta']['delta_offset'] = '0';
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Compromiso';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Campo: Meta */
-  $handler->display->display_options['fields']['field_meta_1']['id'] = 'field_meta_1';
-  $handler->display->display_options['fields']['field_meta_1']['table'] = 'field_data_field_meta';
-  $handler->display->display_options['fields']['field_meta_1']['field'] = 'field_meta';
-  $handler->display->display_options['fields']['field_meta_1']['relationship'] = 'field_accion_collect_value';
-  $handler->display->display_options['fields']['field_meta_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_meta_1']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['fields']['field_meta_1']['delta_offset'] = '0';
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['path'] = 'lista-asesorias-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'lista-asesorias-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -1461,7 +1292,7 @@ function vistas_views_default_views() {
     t('Año de Creación'),
     t('Institucion'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['lista_asesorias'] = $view;
 
@@ -2307,224 +2138,11 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['path'] = 'lista-productos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_producto' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_descripc_fuente_verifica' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => 'auto',
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => 'auto',
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Producto esperado */
-  $handler->display->display_options['fields']['field_producto']['id'] = 'field_producto';
-  $handler->display->display_options['fields']['field_producto']['table'] = 'field_data_field_producto';
-  $handler->display->display_options['fields']['field_producto']['field'] = 'field_producto';
-  $handler->display->display_options['fields']['field_producto']['relationship'] = 'field_meta_target_id';
-  $handler->display->display_options['fields']['field_producto']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['fields']['field_producto']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_producto']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_producto']['multi_type'] = 'ul';
-  /* Campo: Contenido: Descripción Fuente Verificación */
-  $handler->display->display_options['fields']['field_descripc_fuente_verifica']['id'] = 'field_descripc_fuente_verifica';
-  $handler->display->display_options['fields']['field_descripc_fuente_verifica']['table'] = 'field_data_field_descripc_fuente_verifica';
-  $handler->display->display_options['fields']['field_descripc_fuente_verifica']['field'] = 'field_descripc_fuente_verifica';
-  $handler->display->display_options['fields']['field_descripc_fuente_verifica']['relationship'] = 'field_producto_target_id';
-  $handler->display->display_options['fields']['field_descripc_fuente_verifica']['label'] = 'Descripción Fuente';
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Compromiso';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  $handler->display->display_options['path'] = 'lista-productos-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'lista-productos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -2558,7 +2176,7 @@ function vistas_views_default_views() {
     t('Institución'),
     t('Page'),
     t('Descripción Fuente Verificación'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['lista_productos'] = $view;
 
@@ -2692,169 +2310,11 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'listado-aspectos-positivos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_aspecto_positivo' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Aspecto positivo */
-  $handler->display->display_options['fields']['field_aspecto_positivo']['id'] = 'field_aspecto_positivo';
-  $handler->display->display_options['fields']['field_aspecto_positivo']['table'] = 'field_data_field_aspecto_positivo';
-  $handler->display->display_options['fields']['field_aspecto_positivo']['field'] = 'field_aspecto_positivo';
-  $handler->display->display_options['fields']['field_aspecto_positivo']['relationship'] = 'field_meta_target_id';
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Compromiso';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['path'] = 'listado-aspectos-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'lista-aspectos-positivos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -2885,7 +2345,7 @@ function vistas_views_default_views() {
     t('Año de Creación'),
     t('Institución'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['listado_aspectos_positivos'] = $view;
 
@@ -3021,168 +2481,11 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'listado-de-revisiones-de-compromisos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_notificar_institucional' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  /* Campo: Contenido: Notificar institucional */
-  $handler->display->display_options['fields']['field_notificar_institucional']['id'] = 'field_notificar_institucional';
-  $handler->display->display_options['fields']['field_notificar_institucional']['table'] = 'field_data_field_notificar_institucional';
-  $handler->display->display_options['fields']['field_notificar_institucional']['field'] = 'field_notificar_institucional';
-  $handler->display->display_options['fields']['field_notificar_institucional']['label'] = 'Estado';
-  $handler->display->display_options['path'] = 'listado-revisiones-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'lista-revisiones-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -3210,7 +2513,7 @@ function vistas_views_default_views() {
     t('Año de Creación'),
     t('Institución'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['listado_de_revisiones_de_compromisos'] = $view;
 
@@ -3690,169 +2993,11 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'listado-obstaculos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_obstaculo' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Obstáculo */
-  $handler->display->display_options['fields']['field_obstaculo']['id'] = 'field_obstaculo';
-  $handler->display->display_options['fields']['field_obstaculo']['table'] = 'field_data_field_obstaculo';
-  $handler->display->display_options['fields']['field_obstaculo']['field'] = 'field_obstaculo';
-  $handler->display->display_options['fields']['field_obstaculo']['relationship'] = 'field_meta_target_id';
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Compromiso';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['path'] = 'listado-obtaculos-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'lista-obstaculos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -3883,7 +3028,7 @@ function vistas_views_default_views() {
     t('Año de Creación'),
     t('Institución'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['listado_obstaculos'] = $view;
 
@@ -4745,125 +3890,15 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'lista-de-compromisos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'field_institucion' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Campo: Institución  */
-  $handler->display->display_options['fields']['field_institucion']['id'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['table'] = 'field_data_field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['field'] = 'field_institucion';
-  $handler->display->display_options['fields']['field_institucion']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['path'] = 'lista-de-compromisos-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'compromisos-data';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
   );
-  $handler->display->display_options['css_file'] = 'sites/all/themes/micro_zymphonies_theme/css/view-pdf-styling.css';
   $translatables['view_instituciones'] = array(
     t('Master'),
     t('View compromisos'),
@@ -4894,7 +3929,7 @@ function vistas_views_default_views() {
     t('Estado'),
     t('Porcentaje de Avance'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['view_instituciones'] = $view;
 
@@ -4985,128 +4020,11 @@ function vistas_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'compromisos';
 
-  /* Display: PDF Page */
-  $handler = $view->new_display('pdf', 'PDF Page', 'pdf_1');
-  $handler->display->display_options['style_plugin'] = 'pdf_table';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title_1' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-    'title' => array(
-      'header_style' => array(
-        'text' => array(
-          'font_size' => '13',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 'b',
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'body_style' => array(
-        'text' => array(
-          'font_size' => '11',
-          'font_family' => 'times',
-          'font_style' => array(
-            'b' => 0,
-            'i' => 0,
-            'u' => 0,
-            'd' => 0,
-            'o' => 0,
-          ),
-          'align' => NULL,
-          'hyphenate' => NULL,
-          'color' => '',
-        ),
-        'render' => array(
-          'is_html' => 1,
-        ),
-      ),
-      'position' => array(
-        'width' => '',
-      ),
-    ),
-  );
-  $handler->display->display_options['style_options']['position'] = array(
-    'last_writing_position' => 1,
-    'x' => '5',
-    'y' => '5',
-    'width' => '',
-    'row_height' => '15',
-  );
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Usuario: Nombre */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_institucion_target_id';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Institucion';
-  $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Campo: Contenido: Título */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_institucion_node';
-  $handler->display->display_options['fields']['title']['label'] = 'Titulo';
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  $handler->display->display_options['path'] = 'instituciones-por-usuario-pdf';
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'compromisos-por-usuario-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -5134,7 +4052,7 @@ function vistas_views_default_views() {
     t('Titulo'),
     t('Todo'),
     t('Page'),
-    t('PDF Page'),
+    t('Data export'),
   );
   $export['view_listas'] = $view;
 
