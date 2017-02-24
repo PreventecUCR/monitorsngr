@@ -96,40 +96,17 @@ function rules_feature_default_rules_configuration() {
       "LABEL" : "Regla de Moderaci\\u00f3n 3",
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
-      "REQUIRES" : [ "rules", "message_notify" ],
+      "REQUIRES" : [ "rules" ],
       "ON" : { "node_insert--compromiso_de_gestion" : { "bundle" : "compromiso_de_gestion" } },
       "IF" : [
         { "data_is" : { "data" : [ "node:field-institucion:type" ], "value" : "institucion" } }
       ],
       "DO" : [
-        { "entity_create" : {
-            "USING" : {
-              "type" : "message",
-              "param_type" : "regla_3",
-              "param_user" : [ "site:current-user" ]
-            },
-            "PROVIDE" : { "entity_created" : { "entity_created" : "Created entity" } }
-          }
-        },
-        { "data_set" : {
-            "data" : [ "entity-created:field-mss-nombre-compromiso" ],
-            "value" : "[node:title]"
-          }
-        },
-        { "data_set" : {
-            "data" : [ "entity-created:field-mss-nombre-institucion" ],
-            "value" : [ "node:field-institucion:title" ]
-          }
-        },
-        { "data_set" : { "data" : [ "entity-created:field-link" ], "value" : "[node:url]" } },
-        { "data_set" : {
-            "data" : [ "entity-created:field-mss-dirigido-a" ],
-            "value" : [ "node:field-institucion:field-enlace-institucional:name" ]
-          }
-        },
-        { "message_notify_process" : {
-            "message" : [ "entity-created" ],
-            "mail" : [ "node:field-institucion:field-enlace-institucional:mail" ]
+        { "mail" : {
+            "to" : [ "node:field-institucion:field-enlace-institucional:mail" ],
+            "subject" : "Compromiso institucional asignado",
+            "message" : "Estimado(a) [node:field-institucion:field-enlace-institucional:name]. \\r\\nEnlace institucional \\r\\n[node:field-institucion:title]\\r\\n\\r\\nLe invitamos a revisar los compromisos institucionales que han sido asignados a su instituci\\u00f3n, para el cumplimiento del Plan Nacional de Gestion del Riesgo [custom:period_init]-[custom:period_end]. Una vez dentro del Sistema, deber\\u00e1 realizar el proceso de autoevaluaci\\u00f3n de cada compromiso.\\r\\n\\r\\nRecuerde ingresar al Sistema Monitor, con el nombre de usuario y contrase\\u00f1a proporcionados anteriormente, puede ingresar al compromiso creado por medio del siguiente link: [node:url]\\r\\n\\r\\nAtentamente,  \\r\\nUnidad de Desarrollo Estrat\\u00e9gico del Sistema Nacional de Gesti\\u00f3n del Riesgo \\r\\nComisi\\u00f3n Nacional de Prevenci\\u00f3n de Riesgos y Atenci\\u00f3n de Emergencias.",
+            "language" : [ "" ]
           }
         }
       ]
