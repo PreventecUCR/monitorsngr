@@ -658,6 +658,7 @@ $conf['master_modules']['base'] = array(
   'strongarm',
   'views',
   'views_content',
+  'views_data_export',
   'views_field_view',
   'views_pdf',
   'webform_layout',
