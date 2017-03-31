@@ -661,9 +661,6 @@ function sngr_field_bases_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_cod_producto_meta',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -672,7 +669,7 @@ function sngr_field_bases_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 155,
+      'max_length' => 10,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -1913,21 +1910,36 @@ function sngr_field_bases_field_default_field_bases() {
   // Exported field_base: 'field_monto_de_ejecucion'.
   $field_bases['field_monto_de_ejecucion'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_monto_de_ejecucion',
-    'field_permissions' => array(
-      'type' => 0,
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
     ),
-    'indexes' => array(),
     'locked' => 0,
-    'module' => 'number',
+    'module' => 'entityreference',
     'settings' => array(
-      'decimal_separator' => '.',
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'monto_ejecucion' => 'monto_ejecucion',
+        ),
+      ),
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'number_float',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_monto_estimado'.
@@ -3332,41 +3344,6 @@ function sngr_field_bases_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_tipo_instancia'.
-  $field_bases['field_tipo_instancia'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_tipo_instancia',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'tipos_instancia' => 'tipos_instancia',
-        ),
-      ),
-      'target_type' => 'taxonomy_term',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_total_numero_familias'.
