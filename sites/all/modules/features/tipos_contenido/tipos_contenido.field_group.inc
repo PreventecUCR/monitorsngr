@@ -23,13 +23,13 @@ function tipos_contenido_field_group_info() {
     'label' => 'Información Básica',
     'weight' => '1',
     'children' => array(
-      0 => 'field_accion_ejecutar',
-      1 => 'field_year_compromiso',
-      2 => 'field_institucion',
-      3 => 'field_porcentaje_de_avance_compr',
-      4 => 'field_notificar_analista',
+      0 => 'field_year_compromiso',
+      1 => 'field_porcentaje_de_avance_compr',
+      2 => 'field_notificar_analista',
+      3 => 'field_accion_ejecutar',
+      4 => 'field_id_compromiso',
       5 => 'field_notificar_institucional',
-      6 => 'field_id_compromiso',
+      6 => 'field_institucion',
       7 => 'title',
     ),
     'format_type' => 'htab',
@@ -57,8 +57,8 @@ function tipos_contenido_field_group_info() {
     'label' => 'Horizontal Tabs Group',
     'weight' => '0',
     'children' => array(
-      0 => 'group_metas_group',
-      1 => 'group_basic_information',
+      0 => 'group_basic_information',
+      1 => 'group_metas_group',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -84,10 +84,10 @@ function tipos_contenido_field_group_info() {
     'label' => 'Asesorias',
     'weight' => '8',
     'children' => array(
-      0 => 'field_organizacion_capacitadora',
-      1 => 'field_tema_necesidad_meta',
-      2 => 'field_recibio_asesoria_meta',
-      3 => 'field_su_org_requiere_asesoria',
+      0 => 'field_su_org_requiere_asesoria',
+      1 => 'field_organizacion_capacitadora',
+      2 => 'field_tema_necesidad_meta',
+      3 => 'field_recibio_asesoria_meta',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -114,8 +114,8 @@ function tipos_contenido_field_group_info() {
     'label' => 'Avance',
     'weight' => '6',
     'children' => array(
-      0 => 'field_porcentaje_avance_coment',
-      1 => 'field_porcentaje_avance',
+      0 => 'field_porcentaje_avance',
+      1 => 'field_porcentaje_avance_coment',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -170,8 +170,8 @@ function tipos_contenido_field_group_info() {
     'label' => 'Observaciones',
     'weight' => '7',
     'children' => array(
-      0 => 'field_obstaculo',
-      1 => 'field_aspecto_positivo',
+      0 => 'field_aspecto_positivo',
+      1 => 'field_obstaculo',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -281,11 +281,11 @@ function tipos_contenido_field_group_info() {
     'label' => 'Vertical Group',
     'weight' => '3',
     'children' => array(
-      0 => 'group_meta_avance',
-      1 => 'group_meta_asesorias',
-      2 => 'group_producto_tab',
-      3 => 'group_meta_estado',
-      4 => 'group_meta_obsevaciones',
+      0 => 'group_meta_asesorias',
+      1 => 'group_meta_avance',
+      2 => 'group_meta_estado',
+      3 => 'group_meta_obsevaciones',
+      4 => 'group_producto_tab',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(

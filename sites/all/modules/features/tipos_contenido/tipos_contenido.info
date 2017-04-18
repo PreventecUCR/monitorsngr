@@ -60,6 +60,7 @@ features[field_instance][] = node-compromiso_de_gestion-field_notificar_analista
 features[field_instance][] = node-compromiso_de_gestion-field_notificar_institucional
 features[field_instance][] = node-compromiso_de_gestion-field_porcentaje_de_avance_compr
 features[field_instance][] = node-compromiso_de_gestion-field_year_compromiso
+features[field_instance][] = node-evaluacion_de_metas-body
 features[field_instance][] = node-evaluacion_de_metas-field_aspecto_positivo
 features[field_instance][] = node-evaluacion_de_metas-field_estado
 features[field_instance][] = node-evaluacion_de_metas-field_evaluar_producto

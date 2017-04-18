@@ -63,7 +63,7 @@ function tipos_contenido_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_agregar_integrantes_target_id';
   $handler->display->display_options['fields']['title']['label'] = 'Nombre del representante';
-  /* Campo: Node: Rol */
+  /* Campo: Contenido: Rol */
   $handler->display->display_options['fields']['field_rol']['id'] = 'field_rol';
   $handler->display->display_options['fields']['field_rol']['table'] = 'field_data_field_rol';
   $handler->display->display_options['fields']['field_rol']['field'] = 'field_rol';
@@ -110,7 +110,7 @@ function tipos_contenido_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Node entity referenced from field_agregar_integrantes'),
+    t('Contenido entity referenced from field_agregar_integrantes'),
     t('Nombre del representante'),
     t('Rol'),
     t('Todo'),
