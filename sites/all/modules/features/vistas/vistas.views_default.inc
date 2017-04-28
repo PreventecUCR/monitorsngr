@@ -2323,6 +2323,11 @@ function vistas_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
+  /* Campo: Campo: Código Producto */
+  $handler->display->display_options['fields']['field_cod_producto_meta']['id'] = 'field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['table'] = 'field_data_field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['field'] = 'field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['relationship'] = 'field_producto_tid';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Contenido: Publicado */
@@ -2468,6 +2473,11 @@ function vistas_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
+  /* Campo: Campo: Código Producto */
+  $handler->display->display_options['fields']['field_cod_producto_meta']['id'] = 'field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['table'] = 'field_data_field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['field'] = 'field_cod_producto_meta';
+  $handler->display->display_options['fields']['field_cod_producto_meta']['relationship'] = 'field_producto_tid';
   $handler->display->display_options['path'] = 'lista-productos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -2502,6 +2512,7 @@ function vistas_views_default_views() {
     t('Institución'),
     t('Descripcion fuente de Verificación'),
     t('Fuente de verificación'),
+    t('Código Producto'),
     t('Data export'),
     t('Institucion'),
     t('Descripcion fuente de verificacion'),
@@ -4504,6 +4515,11 @@ function vistas_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
+  /* Campo: Término de taxonomía: Código */
+  $handler->display->display_options['fields']['field_codigo']['id'] = 'field_codigo';
+  $handler->display->display_options['fields']['field_codigo']['table'] = 'field_data_field_codigo';
+  $handler->display->display_options['fields']['field_codigo']['field'] = 'field_codigo';
+  $handler->display->display_options['fields']['field_codigo']['relationship'] = 'field_meta_tax_tid';
   /* Sort criterion: Término de taxonomía: Nombre */
   $handler->display->display_options['sorts']['name']['id'] = 'name';
   $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
@@ -4711,6 +4727,7 @@ function vistas_views_default_views() {
     t('%'),
     t('Avance de la Meta'),
     t('Año de Creación'),
+    t('Código'),
     t('Page'),
     t('Data export'),
   );
@@ -5620,75 +5637,11 @@ function vistas_views_default_views() {
     7 => 0,
     6 => 0,
   );
-  /* Filter criterion: Contenido: Código Eje (field_codigo_eje) */
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['id'] = 'field_codigo_eje_tid';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['table'] = 'field_data_field_codigo_eje';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['field'] = 'field_codigo_eje_tid';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['relationship'] = 'field_item_compromiso_value';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['expose']['operator_id'] = 'field_codigo_eje_tid_op';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['expose']['label'] = 'Eje';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['expose']['operator'] = 'field_codigo_eje_tid_op';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['expose']['identifier'] = 'field_codigo_eje_tid';
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    7 => 0,
-    6 => 0,
-    8 => 0,
-  );
-  $handler->display->display_options['filters']['field_codigo_eje_tid']['vocabulary'] = 'eje';
-  /* Filter criterion: Contenido: Codigo Ambito (field_codigo_ambito) */
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['id'] = 'field_codigo_ambito_tid';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['table'] = 'field_data_field_codigo_ambito';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['field'] = 'field_codigo_ambito_tid';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['relationship'] = 'field_item_compromiso_value_1';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['expose']['operator_id'] = 'field_codigo_ambito_tid_op';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['expose']['label'] = 'Ambito';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['expose']['operator'] = 'field_codigo_ambito_tid_op';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['expose']['identifier'] = 'field_codigo_ambito_tid';
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    7 => 0,
-    6 => 0,
-    8 => 0,
-  );
-  $handler->display->display_options['filters']['field_codigo_ambito_tid']['vocabulary'] = 'ambito';
-  /* Filter criterion: Contenido: Código Lineamiento (field_codigo_lineamiento) */
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['id'] = 'field_codigo_lineamiento_tid';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['table'] = 'field_data_field_codigo_lineamiento';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['field'] = 'field_codigo_lineamiento_tid';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['relationship'] = 'field_item_compromiso_value_2';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['expose']['operator_id'] = 'field_codigo_lineamiento_tid_op';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['expose']['label'] = 'Lineamiento';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['expose']['operator'] = 'field_codigo_lineamiento_tid_op';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['expose']['identifier'] = 'field_codigo_lineamiento_tid';
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    7 => 0,
-    6 => 0,
-    8 => 0,
-  );
-  $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['vocabulary'] = 'lineamiento';
   /* Filter criterion: Contenido: Notificar institucional (field_notificar_institucional) */
   $handler->display->display_options['filters']['field_notificar_institucional_value']['id'] = 'field_notificar_institucional_value';
   $handler->display->display_options['filters']['field_notificar_institucional_value']['table'] = 'field_data_field_notificar_institucional';
   $handler->display->display_options['filters']['field_notificar_institucional_value']['field'] = 'field_notificar_institucional_value';
+  $handler->display->display_options['filters']['field_notificar_institucional_value']['group'] = 1;
   $handler->display->display_options['filters']['field_notificar_institucional_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_notificar_institucional_value']['expose']['operator_id'] = 'field_notificar_institucional_value_op';
   $handler->display->display_options['filters']['field_notificar_institucional_value']['expose']['label'] = 'Estado';
@@ -5709,6 +5662,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['table'] = 'field_data_field_porcentaje_de_avance_compr';
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['field'] = 'field_porcentaje_de_avance_compr_value';
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['operator'] = 'between';
+  $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['group'] = 1;
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['expose']['operator_id'] = 'field_porcentaje_de_avance_compr_value_op';
   $handler->display->display_options['filters']['field_porcentaje_de_avance_compr_value']['expose']['label'] = 'Porcentaje de Avance';
@@ -5809,9 +5763,6 @@ function vistas_views_default_views() {
     t('Institución '),
     t('Año'),
     t('Institución'),
-    t('Eje'),
-    t('Ambito'),
-    t('Lineamiento'),
     t('Estado'),
     t('Porcentaje de Avance'),
     t('Page'),
