@@ -1,0 +1,12 @@
+name = producto
+description = Se requiere incluir dos campos más para un producto: Coordinación e  Involucrados.
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_coordinacion_producto
+features[field_base][] = field_involucrados_producto
+features[field_instance][] = taxonomy_term-producto-field_coordinacion_producto
+features[field_instance][] = taxonomy_term-producto-field_involucrados_producto
