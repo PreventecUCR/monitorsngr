@@ -655,6 +655,74 @@ function sngr_field_bases_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-producto-field_prod_coordinacion'.
+  $field_instances['taxonomy_term-producto-field_prod_coordinacion'] = array(
+    'bundle' => 'producto',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_prod_coordinacion',
+    'label' => 'Coordinación',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-producto-field_prod_involucrados'.
+  $field_instances['taxonomy_term-producto-field_prod_involucrados'] = array(
+    'bundle' => 'producto',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_prod_involucrados',
+    'label' => 'Involucrados',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 40,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_institucion_user'.
   $field_instances['user-user-field_institucion_user'] = array(
     'bundle' => 'user',
@@ -695,10 +763,12 @@ function sngr_field_bases_field_default_field_instances() {
   t('Auto inc eje');
   t('Auto inc lineamiento');
   t('Año');
+  t('Coordinación');
   t('Descripción de la Fuente de Verificación');
   t('Espacio para describir cuál es la fuente de verificación requerida');
   t('Institución');
   t('Integrantes');
+  t('Involucrados');
   t('Monto Presupuestario');
   t('Monto de Ejecución');
   t('Montos de Ejecución en GR');
