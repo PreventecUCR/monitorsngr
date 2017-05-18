@@ -244,7 +244,21 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'monitorsngr',
+      'username' => 'postgres',
+      'password' => '',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'pgsql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
@@ -276,7 +290,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = 'HEH8-_ORbJMJHcUzudB9CNzLUAmxFFZx2eUt7fYjYdI';
 
 /**
  * Base URL (optional).
@@ -616,81 +630,3 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash sign to enable.
  */
 # $conf['theme_debug'] = TRUE;
-/**
- * Master module configuration.
- */
-$conf['master_version'] = 2;
-$conf['master_allow_base_scope'] = TRUE;
-$conf['master_modules']['base'] = array(
-  'adminimal_admin_menu',
-  'block_class',
-  'book',
-  'bulk_export',
-  'conditional_fields',
-  'contact',
-  'datatables',
-  'date',
-  'date_popup',
-  'ds',
-  'ds_extras',
-  'entityconnect',
-  'entity_token',
-  'feeds',
-  'inline_entity_form',
-  'jquery_update',
-  'media_internet',
-  'message',
-  'message_notify',
-  'messages_type',
-  'plan_period',
-  'print_pdf',
-  'print_pdf_dompdf',
-  'print_ui',
-  'menus',
-  'page_manager',
-  'panels',
-  'paragraphs',
-  'rules',
-  'rules_admin',
-  'site_map',
-  'smtp',
-  'strongarm',
-  'views',
-  'views_content',
-  'views_field_view',
-  'views_pdf',
-  'webform_layout',
-  'webform_matrix_component',
-  'webform_shs',
-  'wysiwyg',
-
-  // Custom modules.
-  'autoevaluacion',
-  'auto_fill_id',
-  'cne_alters',
-  'compromiso_gestion',
-  'feature_sngr_vistas_de_compromisos_de_gesti_n',
-  'field_permissions',
-  'field_readonly',
-  'lista_modulos',
-  'monitorsngr_pge',
-  'references_dialog',
-  'rules_feature',
-  'sngr_field_bases',
-  'tipos_contenido',
-  'usuarios_roles_permisos',
-  'vistas',
-  'vocabularios',
-);
-
-$conf['master_modules']['local'] = $conf['master_modules']['local'] = array(
-  'devel',
-  'ds_ui',
-  'feeds_ui',
-  'field_ui',
-  'views_ui',
-);
-// Local settings config.
-if (file_exists(dirname(__FILE__) . '/settings.local.inc')) {
-  @include dirname(__FILE__) . '/settings.local.inc';
-}
