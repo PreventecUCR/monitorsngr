@@ -113,6 +113,7 @@
       <li><b>Eje:</b> <?php print $meta['field_eje']; ?></li>
       <li><b>Ámbito:</b> <?php print $meta['field_ambito']; ?></li>
       <li><b>Lineamiento:</b> <?php print $meta['field_lineamiento']; ?></li>
+      <li><b>Descripcion del lineamiento:</b> <?php print $meta['field_description_lineamiento']; ?></li>
       <li>
         <b>Acción Estratégica:</b> <?php print $meta['field_accion_estrategica']; ?>
         <ul>

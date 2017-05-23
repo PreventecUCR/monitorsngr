@@ -524,6 +524,7 @@ function format_metas_labels($node) {
     'field_eje' => $eje->name,
     'field_ambito' => $ambito->name,
     'field_lineamiento' => $lineamiento->name,
+    'field_description_lineamiento' => $lineamiento->description,
     'field_accion_estrategica' => $accion->name,
     'field_accion_codigo' => field_value($accion->field_codigo, 0),
     'field_accion_descripcion' => $accion->description,
