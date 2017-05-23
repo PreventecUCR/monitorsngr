@@ -1488,9 +1488,27 @@ ol.search-results {
   float: left;
 }
 
+.rector {
+  text-align: left;
+  font-size: 25px;
+  color: #f2f5f7;
+}
+
+.udesngr {
+  text-align: left;
+  font-size: 18px;
+  color: #f2f5f7;
+}
+
+.desarrollo {
+  float: right;
+  text-align: right;
+}
+
 .credits {
   float: right;
   text-align: right;
+  font-size: 15px;
 }
 
 /*---------------------------
