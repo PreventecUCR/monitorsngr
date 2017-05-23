@@ -28,6 +28,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -253,7 +254,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Acciones Estratégicas'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -299,6 +300,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -353,7 +355,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['field_enlace_institucional']['settings'] = array(
     'link' => 0,
   );
-  /* Campo: Contenido: Estado */
+  /* Campo: Contenido: Estado de la meta */
   $handler->display->display_options['fields']['field_estado']['id'] = 'field_estado';
   $handler->display->display_options['fields']['field_estado']['table'] = 'field_data_field_estado';
   $handler->display->display_options['fields']['field_estado']['field'] = 'field_estado';
@@ -377,7 +379,7 @@ function vistas_views_default_views() {
     'autoevaluacion' => 'autoevaluacion',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Contenido: Estado (field_estado) */
+  /* Filter criterion: Contenido: Estado de la meta (field_estado) */
   $handler->display->display_options['filters']['field_estado_value']['id'] = 'field_estado_value';
   $handler->display->display_options['filters']['field_estado_value']['table'] = 'field_data_field_estado';
   $handler->display->display_options['filters']['field_estado_value']['field'] = 'field_estado_value';
@@ -403,7 +405,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Autoevaluaciones'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -419,6 +421,7 @@ function vistas_views_default_views() {
     t('<a href="https://163.178.170.162/monitorsngr/node/add/autoevaluacion">Asignar autoevaluación</a>'),
     t('Nid'),
     t('Enlace institucional'),
+    t('Estado de la meta'),
     t('Estado'),
     t('Page'),
   );
@@ -442,6 +445,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -627,6 +631,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Campo: Año */
   $handler->display->display_options['fields']['field_anno']['id'] = 'field_anno';
@@ -683,7 +688,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Consolidado de Montos de Ejecución en GR'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -727,6 +732,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -837,7 +843,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Datos del usuario institucional'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -879,6 +885,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1002,7 +1009,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Decreto de emergencia'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -1044,6 +1051,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1121,6 +1129,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['label'] = 'Usuario';
+  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
@@ -1304,7 +1313,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Enlaces Institucionales'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -1349,6 +1358,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1368,7 +1378,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = 'Nombre';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Campo: Contenido: Acción a seguir */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_accion_a_seguir']['id'] = 'field_accion_a_seguir';
   $handler->display->display_options['fields']['field_accion_a_seguir']['table'] = 'field_data_field_accion_a_seguir';
   $handler->display->display_options['fields']['field_accion_a_seguir']['field'] = 'field_accion_a_seguir';
@@ -1492,7 +1502,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Evaluación Compromisos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -1506,7 +1516,7 @@ function vistas_views_default_views() {
     t('última »'),
     t('Contenido entity referenced from field_institucion'),
     t('Nombre'),
-    t('Acción a seguir'),
+    t('Broken handler field_data_field_accion_a_seguir.field_accion_a_seguir'),
     t('Porcentaje de Avance'),
     t('Notificar institucional'),
     t('Institución'),
@@ -1534,6 +1544,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1716,7 +1727,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Metas a Evaluar'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -1759,6 +1770,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1858,7 +1870,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Instancias de coordinación'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -1895,6 +1907,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -2038,7 +2051,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Instituciones del Sistema Nacional de Gestión del Riesgo'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -2083,6 +2096,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -2194,6 +2208,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'lista-asesorias-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -2203,7 +2218,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Temas con Necesidad de Asesoría'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -2245,6 +2260,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'datatables';
@@ -2394,17 +2410,17 @@ function vistas_views_default_views() {
   );
   $handler->display->display_options['fields']['field_meta']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_meta']['delta_offset'] = '0';
-  /* Campo: Contenido: Código Lineamiento */
+  /* Campo: : field_codigo_lineamiento */
   $handler->display->display_options['fields']['field_codigo_lineamiento']['id'] = 'field_codigo_lineamiento';
   $handler->display->display_options['fields']['field_codigo_lineamiento']['table'] = 'field_data_field_codigo_lineamiento';
   $handler->display->display_options['fields']['field_codigo_lineamiento']['field'] = 'field_codigo_lineamiento';
   $handler->display->display_options['fields']['field_codigo_lineamiento']['relationship'] = 'field_item_compromiso_value';
-  /* Campo: Contenido: Codigo Ambito */
+  /* Campo: : field_codigo_ambito */
   $handler->display->display_options['fields']['field_codigo_ambito']['id'] = 'field_codigo_ambito';
   $handler->display->display_options['fields']['field_codigo_ambito']['table'] = 'field_data_field_codigo_ambito';
   $handler->display->display_options['fields']['field_codigo_ambito']['field'] = 'field_codigo_ambito';
   $handler->display->display_options['fields']['field_codigo_ambito']['relationship'] = 'field_item_compromiso_value';
-  /* Campo: Contenido: Código Eje */
+  /* Campo: : field_codigo_eje */
   $handler->display->display_options['fields']['field_codigo_eje']['id'] = 'field_codigo_eje';
   $handler->display->display_options['fields']['field_codigo_eje']['table'] = 'field_data_field_codigo_eje';
   $handler->display->display_options['fields']['field_codigo_eje']['field'] = 'field_codigo_eje';
@@ -2426,7 +2442,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['field_porcentaje_avance']['table'] = 'field_data_field_porcentaje_avance';
   $handler->display->display_options['fields']['field_porcentaje_avance']['field'] = 'field_porcentaje_avance';
   $handler->display->display_options['fields']['field_porcentaje_avance']['relationship'] = 'field_meta_target_id';
-  /* Campo: Contenido: Estado autoevaluación */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_status_autoevaluacion']['id'] = 'field_status_autoevaluacion';
   $handler->display->display_options['fields']['field_status_autoevaluacion']['table'] = 'field_data_field_status_autoevaluacion';
   $handler->display->display_options['fields']['field_status_autoevaluacion']['field'] = 'field_status_autoevaluacion';
@@ -2458,7 +2474,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Listado de metas'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -2469,12 +2485,12 @@ function vistas_views_default_views() {
     t('Compromisos'),
     t('Institución '),
     t('Meta'),
-    t('Código Lineamiento'),
-    t('Codigo Ambito'),
-    t('Código Eje'),
+    t('field_codigo_lineamiento'),
+    t('field_codigo_ambito'),
+    t('field_codigo_eje'),
     t('Año de Creación'),
     t('Porcentaje avance'),
-    t('Estado autoevaluación'),
+    t('Broken handler field_data_field_status_autoevaluacion.field_status_autoevaluacion'),
     t('Page'),
   );
   $export['lista_metas'] = $view;
@@ -2497,6 +2513,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -2608,7 +2625,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['field_descripc_fuente_verifica']['table'] = 'field_data_field_descripc_fuente_verifica';
   $handler->display->display_options['fields']['field_descripc_fuente_verifica']['field'] = 'field_descripc_fuente_verifica';
   $handler->display->display_options['fields']['field_descripc_fuente_verifica']['relationship'] = 'field_evaluar_producto_value';
-  /* Campo: Campo: Fuente de verificación */
+  /* Campo: Field collection item: Fuente de verificación */
   $handler->display->display_options['fields']['field_prod_fuente_verifica']['id'] = 'field_prod_fuente_verifica';
   $handler->display->display_options['fields']['field_prod_fuente_verifica']['table'] = 'field_data_field_prod_fuente_verifica';
   $handler->display->display_options['fields']['field_prod_fuente_verifica']['field'] = 'field_prod_fuente_verifica';
@@ -2631,7 +2648,7 @@ function vistas_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Campo: Campo: Código Producto */
+  /* Campo: Término de taxonomía: Código Producto */
   $handler->display->display_options['fields']['field_cod_producto_meta']['id'] = 'field_cod_producto_meta';
   $handler->display->display_options['fields']['field_cod_producto_meta']['table'] = 'field_data_field_cod_producto_meta';
   $handler->display->display_options['fields']['field_cod_producto_meta']['field'] = 'field_cod_producto_meta';
@@ -2741,6 +2758,7 @@ function vistas_views_default_views() {
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'listado-productos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -2750,7 +2768,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Productos Evaluados'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -2796,6 +2814,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -2934,6 +2953,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'lista-aspectos-positivos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -2943,7 +2963,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('listado aspectos positivos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -2984,6 +3004,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -3111,6 +3132,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'lista-revisiones-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -3120,7 +3142,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Listado de revisiones de compromisos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -3160,6 +3182,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -3544,7 +3567,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_dependent'] = 0;
-  /* Filter criterion: Contenido: Estado (field_estado) */
+  /* Filter criterion: Contenido: Estado de la meta (field_estado) */
   $handler->display->display_options['filters']['field_estado_value']['id'] = 'field_estado_value';
   $handler->display->display_options['filters']['field_estado_value']['table'] = 'field_data_field_estado';
   $handler->display->display_options['filters']['field_estado_value']['field'] = 'field_estado_value';
@@ -3594,6 +3617,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'listado-evaluacion-metas-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -3603,7 +3627,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Metas en Evaluación'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -3664,6 +3688,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -3792,7 +3817,7 @@ function vistas_views_default_views() {
     6 => 0,
     8 => 0,
   );
-  /* Filter criterion: Contenido: Código Eje (field_codigo_eje) */
+  /* Filter criterion: : field_codigo_eje (field_codigo_eje) */
   $handler->display->display_options['filters']['field_codigo_eje_tid']['id'] = 'field_codigo_eje_tid';
   $handler->display->display_options['filters']['field_codigo_eje_tid']['table'] = 'field_data_field_codigo_eje';
   $handler->display->display_options['filters']['field_codigo_eje_tid']['field'] = 'field_codigo_eje_tid';
@@ -3814,7 +3839,7 @@ function vistas_views_default_views() {
     8 => 0,
   );
   $handler->display->display_options['filters']['field_codigo_eje_tid']['vocabulary'] = 'eje';
-  /* Filter criterion: Contenido: Codigo Ambito (field_codigo_ambito) */
+  /* Filter criterion: : field_codigo_ambito (field_codigo_ambito) */
   $handler->display->display_options['filters']['field_codigo_ambito_tid']['id'] = 'field_codigo_ambito_tid';
   $handler->display->display_options['filters']['field_codigo_ambito_tid']['table'] = 'field_data_field_codigo_ambito';
   $handler->display->display_options['filters']['field_codigo_ambito_tid']['field'] = 'field_codigo_ambito_tid';
@@ -3836,7 +3861,7 @@ function vistas_views_default_views() {
     8 => 0,
   );
   $handler->display->display_options['filters']['field_codigo_ambito_tid']['vocabulary'] = 'ambito';
-  /* Filter criterion: Contenido: Código Lineamiento (field_codigo_lineamiento) */
+  /* Filter criterion: : field_codigo_lineamiento (field_codigo_lineamiento) */
   $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['id'] = 'field_codigo_lineamiento_tid';
   $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['table'] = 'field_data_field_codigo_lineamiento';
   $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['field'] = 'field_codigo_lineamiento_tid';
@@ -3877,7 +3902,7 @@ function vistas_views_default_views() {
     ),
   );
   $handler->display->display_options['filters']['field_codigo_lineamiento_tid']['vocabulary'] = 'lineamiento';
-  /* Filter criterion: Contenido: Estado (field_estado) */
+  /* Filter criterion: Contenido: Estado de la meta (field_estado) */
   $handler->display->display_options['filters']['field_estado_value']['id'] = 'field_estado_value';
   $handler->display->display_options['filters']['field_estado_value']['table'] = 'field_data_field_estado';
   $handler->display->display_options['filters']['field_estado_value']['field'] = 'field_estado_value';
@@ -3947,7 +3972,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('listado metas'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -4000,6 +4025,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -4145,6 +4171,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'lista-obstaculos-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -4154,7 +4181,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Obstáculos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -4195,6 +4222,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -4484,7 +4512,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Matriz de cumplimiento'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -4528,6 +4556,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -4606,7 +4635,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Listado de compromisos institucionales'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -4643,6 +4672,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -4935,6 +4965,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
@@ -5005,7 +5036,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Metas Generales'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -5057,6 +5088,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -5147,7 +5179,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Monto Institución'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -5179,6 +5211,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -5440,6 +5473,7 @@ function vistas_views_default_views() {
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'productos-adicionales-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -5449,7 +5483,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Productos Adicionales'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -5500,6 +5534,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -5656,6 +5691,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'revision-por-usuario-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -5665,7 +5701,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Revision por usuario'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -5706,6 +5742,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -5931,7 +5968,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Metas'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -5979,6 +6016,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -6045,11 +6083,11 @@ function vistas_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = 'Nombre del producto';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Campo: Campo: Código Producto */
+  /* Campo: Término de taxonomía: Código Producto */
   $handler->display->display_options['fields']['field_cod_producto_meta']['id'] = 'field_cod_producto_meta';
   $handler->display->display_options['fields']['field_cod_producto_meta']['table'] = 'field_data_field_cod_producto_meta';
   $handler->display->display_options['fields']['field_cod_producto_meta']['field'] = 'field_cod_producto_meta';
-  /* Campo: Campo: Año Inicial */
+  /* Campo: Término de taxonomía: Año Inicial */
   $handler->display->display_options['fields']['field_anno_ini_meta']['id'] = 'field_anno_ini_meta';
   $handler->display->display_options['fields']['field_anno_ini_meta']['table'] = 'field_data_field_anno_ini_meta';
   $handler->display->display_options['fields']['field_anno_ini_meta']['field'] = 'field_anno_ini_meta';
@@ -6057,7 +6095,7 @@ function vistas_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Campo: Campo: Año Final */
+  /* Campo: Término de taxonomía: Año Final */
   $handler->display->display_options['fields']['field_anno_fin_meta']['id'] = 'field_anno_fin_meta';
   $handler->display->display_options['fields']['field_anno_fin_meta']['table'] = 'field_data_field_anno_fin_meta';
   $handler->display->display_options['fields']['field_anno_fin_meta']['field'] = 'field_anno_fin_meta';
@@ -6065,7 +6103,7 @@ function vistas_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Campo: Campo: Instituciones Involucradas */
+  /* Campo: : field_institucion_administradora */
   $handler->display->display_options['fields']['field_institucion_administradora']['id'] = 'field_institucion_administradora';
   $handler->display->display_options['fields']['field_institucion_administradora']['table'] = 'field_data_field_institucion_administradora';
   $handler->display->display_options['fields']['field_institucion_administradora']['field'] = 'field_institucion_administradora';
@@ -6073,7 +6111,7 @@ function vistas_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_institucion_administradora']['delta_offset'] = '0';
-  /* Campo: Término de taxonomía: descripcion del producto */
+  /* Campo: Broken/missing handler */
   $handler->display->display_options['fields']['field_descripcion_del_producto']['id'] = 'field_descripcion_del_producto';
   $handler->display->display_options['fields']['field_descripcion_del_producto']['table'] = 'field_data_field_descripcion_del_producto';
   $handler->display->display_options['fields']['field_descripcion_del_producto']['field'] = 'field_descripcion_del_producto';
@@ -6096,7 +6134,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Taxonomias productos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -6112,8 +6150,8 @@ function vistas_views_default_views() {
     t('Código Producto'),
     t('Año Inicial'),
     t('Año Final'),
-    t('Instituciones Involucradas'),
-    t('descripcion del producto'),
+    t('field_institucion_administradora'),
+    t('Broken handler field_data_field_descripcion_del_producto.field_descripcion_del_producto'),
     t('Detalle del Producto'),
     t('Page'),
   );
@@ -6138,6 +6176,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -6357,6 +6396,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'compromisos-data';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -6366,7 +6406,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Listado de compromisos'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -6412,6 +6452,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -6481,6 +6522,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'Exporta a CSV';
   $handler->display->display_options['path'] = 'compromisos-por-usuario-csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -6490,7 +6532,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Instituciones por usuario'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
@@ -6531,6 +6573,7 @@ function vistas_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -6613,7 +6656,7 @@ function vistas_views_default_views() {
     t('Master'),
     t('Vista prueba'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
