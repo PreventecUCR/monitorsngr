@@ -1486,11 +1486,24 @@ ol.search-results {
 
 .copyright {
   float: left;
+  
+}
+
+.rector {
+ float: left;	
+ font-size: 20px;
+}
+
+.udesngr {
+   float: left;
+   text-align: left;
+  font-size: 19px;
 }
 
 .credits {
-  float: right;
   text-align: right;
+  font-size: 15px;
+  
 }
 
 /*---------------------------
