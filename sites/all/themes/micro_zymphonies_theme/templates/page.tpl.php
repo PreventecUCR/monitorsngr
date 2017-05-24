@@ -242,13 +242,11 @@
       
    <div id="copyright" class="full-wrap clearfix">
       <p class="copyright">
-	     <div class="rector">
-           <a href="http://www.cne.go.cr" target="_blank">  <img src="<?php global $base_path; print $base_path . path_to_theme() . '/images/'; ?>arbolito.png" align = "left"  alt="Logo Sistema de Monitoreo y Seguimiento" class="imagen" /> <?php print t('Comisión Nacional de Prevención  de Riesgos y Atención de Emergencias'); ?> &copy; <?php echo date("Y"); ?><?php print $site_name; ?>
-         </div>
-	     <p class="udesngr"> <?php print t('Unidad de Desarrollo Estratégico <br> del Sistema Nacional de Gestión del Riesgo')?> </p>
-	     <p class="credits"><a href="http://www.preventec.ucr.ac.cr" target="_blank"> Preventec </a>|<a href="http://www.ucr.ac.cr" target="_blank"> Universidad de Costa Rica  </a>  </p> <br>  
-         <p class="credits"><a href="https://163.178.170.162/monitorsngr/sitemap" target="_blank"> Mapa del sitio </a></p> <br>
-         <p class="credits"> <?php print t('Desarrollado con'); ?><a href="http://www.drupal.org" target="_blank"> Drupal </a></p>
+      <a href="http://www.cne.go.cr" target="_blank"><?php print t('Comisión Nacional de Prevención de Riesgos y Atención de Emergencias'); ?> &copy; <?php echo date("Y"); ?><?php print $site_name; ?></a>
+      <a href="http://www.preventec.ucr.ac.cr" target="_blank"> Preventec </a>|<a href="http://www.ucr.ac.cr" target="_blank"> Universidad de Costa Rica  &copy; </a></p>   
+      <p class="credits"><a href="https://163.178.170.162/monitorsngr/sitemap" target="_blank"> Mapa del sitio </a></p>
+      <p class="credits"> <?php print t('Desarrollado con'); ?><a href="http://www.drupal.org" target="_blank"> Drupal </a></p>
+                
     </div>
   </div>
 
