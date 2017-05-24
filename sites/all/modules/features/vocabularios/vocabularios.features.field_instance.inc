@@ -198,7 +198,7 @@ function vocabularios_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'references_dialog',
+      'module' => 'taxonomy',
       'settings' => array(
         'autocomplete_match' => 'starts_with',
         'autocomplete_path' => 'taxonomy/autocomplete',
@@ -208,7 +208,7 @@ function vocabularios_field_default_field_instances() {
         'references_dialog_search_view' => '',
         'size' => 60,
       ),
-      'type' => 'references_dialog_term_reference',
+      'type' => 'taxonomy_autocomplete',
       'weight' => 1,
     ),
   );
