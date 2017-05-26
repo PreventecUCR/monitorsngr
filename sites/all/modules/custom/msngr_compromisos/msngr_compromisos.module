@@ -44,8 +44,8 @@
 function msngr_compromisos_node_access($node, $op, $account) {
   if (!is_string($node) && in_array('user-institucional', $account->roles) && $op == 'update') {
     if($node->type == 'compromiso_de_gestion') {
-      $user_entity = user_load($account->uid);
-      return field_target_id($user_entity->field_institucion, 0) != field_target_id($node->field_institucion, 0) ? NODE_ACCESS_DENY : NODE_ACCESS_ALLOW;
+      $institution = node_load(field_target_id($node->field_institucion, 0));
+      return field_target_id($institution->field_enlace_institucional, 0) != $account->uid ? NODE_ACCESS_DENY : NODE_ACCESS_ALLOW;
     }
 
     if($node->type == 'evaluacion_de_metas') {
@@ -53,8 +53,10 @@ function msngr_compromisos_node_access($node, $op, $account) {
       $compromisos = get_compromiso_by_meta($node->nid);
       foreach ($compromisos as $compromiso) {
         $compromiso_node = node_load($compromiso->nid);
+        $institution = node_load(field_target_id($compromiso_node->field_institucion, 0));
+
         $user_entity = user_load($account->uid);
-        $result = (field_target_id($user_entity->field_institucion, 0) == field_target_id($compromiso_node->field_institucion, 0)) || $result;
+        $result = field_target_id($institution->field_enlace_institucional, 0) == $user_entity->uid || $result;
       }
       return $result ? NODE_ACCESS_ALLOW : NODE_ACCESS_DENY;
     }
