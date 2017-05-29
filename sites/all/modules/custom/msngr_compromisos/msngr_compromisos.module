@@ -120,12 +120,9 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
     if (!in_array('admin-sngr', $roles) && !in_array('administrator', $roles)) {
       $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_evaluar_producto'][LANGUAGE_NONE]['add_more']['#access'] = FALSE;
     }
-  }
-  $node = $form_state['node'];
 
-  $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_evaluar_producto'] = products_none_options($form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_evaluar_producto']);
+    $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_evaluar_producto'] = products_none_options($form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_evaluar_producto']);
 
-  if (!isset($node->nid) || isset($node->is_new)) {
     // This is a new node.
     /////////////////dropdown productos creacion compromiso
 
@@ -161,7 +158,10 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
     $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_meta_tax'][LANGUAGE_NONE]['#ajax'] = $ajax_producto;
     /////////////////dropdown productos creacion compromiso
   }
-  else {
+
+  $node = $form_state['node'];
+
+  if (isset($node->nid) || !isset($node->is_new)) {
     // This is not a new node.
     /////////////////dropdown productos edicion compromiso
     $call_producto_edit = array(
@@ -207,6 +207,8 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
       }
     }
   }
+  //dpm($form);
+  //dpm($form_state);
 }
 
 function products_none_options($form) {
