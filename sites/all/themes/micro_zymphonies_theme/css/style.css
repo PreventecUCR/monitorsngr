@@ -1000,11 +1000,11 @@ ul.secondary a.active {
 .field-name-field-tags div {
   display: inline;
 }
-
+/*
 .field-item {
   width: 800px;
 
-}
+}*/
 /*-------------------------------------------*
   Profile
 /*-------------------------------------------*/
@@ -1791,4 +1791,17 @@ div.warning {
 
 .taxonomy-ambito {
   background-color: #e1e2dc;
+}
+
+/* Media files */
+.field-multiple-table .field-multiple-drag {
+  display:none;
+}
+
+.field-multiple-table input.fid {
+  display: none;
+}
+
+.field-multiple-table a.button {
+  padding-right: 15px;
 }
