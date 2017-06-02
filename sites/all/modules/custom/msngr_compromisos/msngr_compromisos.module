@@ -82,7 +82,7 @@ function msngr_compromisos_node_update($node) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$form_state, $form_id) {
+function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$form_state) {
 
   global $user;
 
@@ -113,6 +113,7 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
   $form['field_evaluar_metas'][LANGUAGE_NONE]['actions']['ief_add']['#value'] = 'Agregar nueva evaluación';
 
   if (isset($form['field_evaluar_metas'][LANGUAGE_NONE]['form'])) { //Cuando se agrega una nueva evaluación
+    $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['#element_validate'][] = 'msngr_compromisos_validate_inline_evaluacion_meta';
     $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['title']['#access'] = FALSE;
     $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['status']['#access'] = FALSE;
     $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['#title'] = 'Agregar nueva evaluación';
@@ -157,6 +158,15 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
     }
     $form['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_meta_tax'][LANGUAGE_NONE]['#ajax'] = $ajax_producto;
     /////////////////dropdown productos creacion compromiso
+  }
+
+  foreach ($form['field_evaluar_metas']['und']['entities'] as $key => $entity) {
+    if(is_numeric($key)) {
+      if (isset($entity['form'])) {
+        $entity['form']['#element_validate'][] = 'msngr_compromisos_validate_inline_evaluacion_meta';
+      }
+      $form['field_evaluar_metas']['und']['entities'][$key] = $entity;
+    }
   }
 
   $node = $form_state['node'];
@@ -207,8 +217,19 @@ function msngr_compromisos_form_compromiso_de_gestion_node_form_alter(&$form, &$
       }
     }
   }
-  //dpm($form);
-  //dpm($form_state);
+}
+
+function msngr_compromisos_validate_inline_evaluacion_meta($element, &$form_state) {
+  if($element['#op'] == 'add') {
+    if(!is_numeric($form_state['values']['field_evaluar_metas'][LANGUAGE_NONE]['form']['field_meta_tax'][LANGUAGE_NONE][0]['tid'])) {
+      form_error($element['field_meta_tax'], t('Valor de ingresado en el campo Meta no es válido'));
+    }
+  } else {
+    $key = $element['#ief_row_delta'];
+    if(!is_numeric($form_state['values']['field_evaluar_metas'][LANGUAGE_NONE]['entities'][$key]['form']['field_meta_tax'][LANGUAGE_NONE][0]['tid'])) {
+      form_error($element['field_meta_tax'], t('Valor de ingresado en el campo Meta no es válido'));
+    }
+  }
 }
 
 function products_none_options($form) {
