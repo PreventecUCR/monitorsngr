@@ -6170,6 +6170,14 @@ function vistas_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Encabezado: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Crear Producto';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<a class="btn btn-primary" href="/monitorsngr/admin/structure/taxonomy/producto/add">Crear Producto</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Campo: Término de taxonomía: Nombre */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -6254,6 +6262,8 @@ function vistas_views_default_views() {
     t('‹ anterior'),
     t('siguiente ›'),
     t('última »'),
+    t('Crear Producto'),
+    t('<a class="btn btn-primary" href="/monitorsngr/admin/structure/taxonomy/producto/add">Crear Producto</a>'),
     t('Nombre del producto'),
     t('Código Producto'),
     t('Año Inicial'),
