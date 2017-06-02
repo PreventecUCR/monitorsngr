@@ -28,6 +28,7 @@ function tipos_contenido_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -63,7 +64,7 @@ function tipos_contenido_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_agregar_integrantes_target_id';
   $handler->display->display_options['fields']['title']['label'] = 'Nombre del representante';
-  /* Campo: Node: Rol */
+  /* Campo: Contenido: Rol */
   $handler->display->display_options['fields']['field_rol']['id'] = 'field_rol';
   $handler->display->display_options['fields']['field_rol']['table'] = 'field_data_field_rol';
   $handler->display->display_options['fields']['field_rol']['field'] = 'field_rol';
@@ -105,12 +106,12 @@ function tipos_contenido_views_default_views() {
     t('Master'),
     t('Integrantes Comités / Asistentes Foro'),
     t('more'),
-    t('Apply'),
+    t('Aplicar'),
     t('Reiniciar'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Node entity referenced from field_agregar_integrantes'),
+    t('Contenido entity referenced from field_agregar_integrantes'),
     t('Nombre del representante'),
     t('Rol'),
     t('Todo'),
