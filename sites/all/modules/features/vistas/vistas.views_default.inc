@@ -75,7 +75,7 @@ function vistas_views_default_views() {
       'empty_column' => 0,
     ),
     'name_4' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -246,6 +246,33 @@ function vistas_views_default_views() {
   $handler->display->display_options['filters']['name_2']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['name_2']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['name_2']['expose']['autocomplete_dependent'] = 0;
+  /* Filter criterion: Término de taxonomía: Nombre */
+  $handler->display->display_options['filters']['name_3']['id'] = 'name_3';
+  $handler->display->display_options['filters']['name_3']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name_3']['field'] = 'name';
+  $handler->display->display_options['filters']['name_3']['relationship'] = 'field_accion_estrategica_tid';
+  $handler->display->display_options['filters']['name_3']['operator'] = 'contains';
+  $handler->display->display_options['filters']['name_3']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name_3']['expose']['operator_id'] = 'name_3_op';
+  $handler->display->display_options['filters']['name_3']['expose']['label'] = 'Acción Estratégica';
+  $handler->display->display_options['filters']['name_3']['expose']['operator'] = 'name_3_op';
+  $handler->display->display_options['filters']['name_3']['expose']['identifier'] = 'name_3';
+  $handler->display->display_options['filters']['name_3']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_filter'] = 1;
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_items'] = '10';
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_min_chars'] = '0';
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_field'] = 'name_4';
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_suggestion'] = 1;
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_dropdown'] = 1;
+  $handler->display->display_options['filters']['name_3']['expose']['autocomplete_dependent'] = 0;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -5753,10 +5780,56 @@ function vistas_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'name' => 'name',
+    'field_accion_estrategica' => 'field_accion_estrategica',
+    'field_productos_relacionados' => 'field_productos_relacionados',
+    'name_1' => 'name_1',
+    'name_2' => 'name_2',
+    'name_3' => 'name_3',
+    'name_4' => 'name_4',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_accion_estrategica' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_productos_relacionados' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'name_1' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'name_2' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'name_3' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'name_4' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -5960,6 +6033,32 @@ function vistas_views_default_views() {
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['name_3']['expose']['autocomplete_dependent'] = 0;
+  /* Filter criterion: Término de taxonomía: Nombre */
+  $handler->display->display_options['filters']['name_4']['id'] = 'name_4';
+  $handler->display->display_options['filters']['name_4']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name_4']['field'] = 'name';
+  $handler->display->display_options['filters']['name_4']['operator'] = 'contains';
+  $handler->display->display_options['filters']['name_4']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name_4']['expose']['operator_id'] = 'name_4_op';
+  $handler->display->display_options['filters']['name_4']['expose']['label'] = 'Meta';
+  $handler->display->display_options['filters']['name_4']['expose']['operator'] = 'name_4_op';
+  $handler->display->display_options['filters']['name_4']['expose']['identifier'] = 'name_4';
+  $handler->display->display_options['filters']['name_4']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_filter'] = 1;
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_items'] = '10';
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_min_chars'] = '0';
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_field'] = 'name';
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_raw_suggestion'] = 1;
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_raw_dropdown'] = 1;
+  $handler->display->display_options['filters']['name_4']['expose']['autocomplete_dependent'] = 0;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -5994,6 +6093,7 @@ function vistas_views_default_views() {
     t('Eje'),
     t('Ámbito'),
     t('Lineamiento'),
+    t('Meta'),
     t('Page'),
   );
   $export['taxonomias_metas'] = $view;
@@ -6027,22 +6127,21 @@ function vistas_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'name' => 'name',
-    'field_anno_fin_meta' => 'field_anno_fin_meta',
-    'field_anno_ini_meta' => 'field_anno_ini_meta',
     'field_cod_producto_meta' => 'field_cod_producto_meta',
-    'field_eje' => 'field_eje',
-    'field_institucion_administradora' => 'field_institucion_administradora',
+    'field_anno_ini_meta' => 'field_anno_ini_meta',
+    'field_anno_fin_meta' => 'field_anno_fin_meta',
+    'field_detalle_del_producto' => 'field_detalle_del_producto',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'name' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_anno_fin_meta' => array(
+    'field_cod_producto_meta' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -6056,21 +6155,16 @@ function vistas_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_cod_producto_meta' => array(
+    'field_anno_fin_meta' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_eje' => array(
+    'field_detalle_del_producto' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_institucion_administradora' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -6103,18 +6197,6 @@ function vistas_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Campo: : field_institucion_administradora */
-  $handler->display->display_options['fields']['field_institucion_administradora']['id'] = 'field_institucion_administradora';
-  $handler->display->display_options['fields']['field_institucion_administradora']['table'] = 'field_data_field_institucion_administradora';
-  $handler->display->display_options['fields']['field_institucion_administradora']['field'] = 'field_institucion_administradora';
-  $handler->display->display_options['fields']['field_institucion_administradora']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['fields']['field_institucion_administradora']['delta_offset'] = '0';
-  /* Campo: Broken/missing handler */
-  $handler->display->display_options['fields']['field_descripcion_del_producto']['id'] = 'field_descripcion_del_producto';
-  $handler->display->display_options['fields']['field_descripcion_del_producto']['table'] = 'field_data_field_descripcion_del_producto';
-  $handler->display->display_options['fields']['field_descripcion_del_producto']['field'] = 'field_descripcion_del_producto';
   /* Campo: Término de taxonomía: Detalle del Producto */
   $handler->display->display_options['fields']['field_detalle_del_producto']['id'] = 'field_detalle_del_producto';
   $handler->display->display_options['fields']['field_detalle_del_producto']['table'] = 'field_data_field_detalle_del_producto';
@@ -6126,6 +6208,32 @@ function vistas_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'producto' => 'producto',
   );
+  /* Filter criterion: Término de taxonomía: Nombre */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'contains';
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'Producto';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_filter'] = 1;
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_items'] = '10';
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_min_chars'] = '0';
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_field'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_raw_suggestion'] = 1;
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_raw_dropdown'] = 1;
+  $handler->display->display_options['filters']['name']['expose']['autocomplete_dependent'] = 0;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -6150,9 +6258,8 @@ function vistas_views_default_views() {
     t('Código Producto'),
     t('Año Inicial'),
     t('Año Final'),
-    t('field_institucion_administradora'),
-    t('Broken handler field_data_field_descripcion_del_producto.field_descripcion_del_producto'),
     t('Detalle del Producto'),
+    t('Producto'),
     t('Page'),
   );
   $export['taxonomias_productos'] = $view;
