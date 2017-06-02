@@ -318,7 +318,7 @@ function tipos_contenido_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_notificar_analista',
     'label' => 'Notificar analista',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
