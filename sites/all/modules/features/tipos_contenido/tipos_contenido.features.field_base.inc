@@ -133,30 +133,6 @@ function tipos_contenido_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_observacion_del_analista'.
-  $field_bases['field_observacion_del_analista'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_observacion_del_analista',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_rol'.
   $field_bases['field_rol'] = array(
     'active' => 1,

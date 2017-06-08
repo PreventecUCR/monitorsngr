@@ -36,7 +36,7 @@ function tipos_contenido_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_prod_fuente_verifica',
     'label' => 'Fuente de verificación',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'file_extensions' => 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps ppsx odt ods odp mp3 mov m4v mp4 mpeg avi ogg oga ogv wmv ico tiff csv',
       'user_register_form' => FALSE,
@@ -89,7 +89,7 @@ function tipos_contenido_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_producto',
     'label' => 'Producto',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -318,7 +318,7 @@ function tipos_contenido_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_notificar_analista',
     'label' => 'Notificar analista',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -662,47 +662,6 @@ function tipos_contenido_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 19,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-evaluacion_de_metas-field_observacion_del_analista'.
-  $field_instances['node-evaluacion_de_metas-field_observacion_del_analista'] = array(
-    'bundle' => 'evaluacion_de_metas',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_observacion_del_analista',
-    'label' => 'Observaciones del analista',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 18,
     ),
   );
 
