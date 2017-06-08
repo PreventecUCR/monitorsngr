@@ -632,3 +632,18 @@ function get_meta_global_percentage($meta_id) {
 
   return $sum / $cant;
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function msngr_compromisos_form_views_exposed_form_alter(&$form, &$form_state) {
+  // Check for autocomplete filters
+  $form_fields = array_filter($form, function ($v) {
+    return isset($v['#autocomplete_path']);
+  });
+
+  // Change the maxlenght to each of them
+  foreach ($form_fields as $key => $value) {
+    $form[$key]['#maxlength'] = 512;
+  }
+}
