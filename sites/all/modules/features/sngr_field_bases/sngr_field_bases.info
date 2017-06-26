@@ -82,6 +82,7 @@ features[field_base][] = field_estado
 features[field_base][] = field_evaluar_metas
 features[field_base][] = field_evaluar_producto
 features[field_base][] = field_extension
+features[field_base][] = field_extension_telefonica
 features[field_base][] = field_fase
 features[field_base][] = field_fecha
 features[field_base][] = field_fecha_finiquito
