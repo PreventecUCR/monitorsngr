@@ -35,7 +35,7 @@ function sngr_field_bases_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_descripc_fuente_verifica',
     'label' => 'Descripción de la Fuente de Verificación',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
