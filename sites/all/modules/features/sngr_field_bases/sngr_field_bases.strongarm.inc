@@ -89,14 +89,11 @@ function sngr_field_bases_strongarm() {
       'print' => array(
         'custom_settings' => FALSE,
       ),
-      'field_readonly' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '-5',
         ),
       ),
       'display' => array(),

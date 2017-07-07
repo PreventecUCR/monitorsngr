@@ -35,7 +35,7 @@ function sngr_field_bases_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_descripc_fuente_verifica',
     'label' => 'Descripción de la Fuente de Verificación',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -232,18 +232,17 @@ function sngr_field_bases_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'node-instancia_coordinacion-field_documento_de_credenciales'.
-  $field_instances['node-instancia_coordinacion-field_documento_de_credenciales'] = array(
+  // Exported field_instance: 'node-instancia_coordinacion-field_attachment'.
+  $field_instances['node-instancia_coordinacion-field_attachment'] = array(
     'bundle' => 'instancia_coordinacion',
     'deleted' => 0,
-    'description' => 'Documento que establece funciones, integrantes, entre otros.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => NULL,
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'media_large',
         'weight' => 7,
       ),
       'teaser' => array(
@@ -254,24 +253,31 @@ function sngr_field_bases_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_documento_de_credenciales',
-    'label' => 'Documento de credenciales',
+    'field_name' => 'field_attachment',
+    'label' => 'Attachment',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
-      'file_directory' => 'files',
-      'file_extensions' => 'txt pdf xls dosc cvs',
-      'max_filesize' => '',
+      'file_extensions' => 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps ppsx odt ods odp mp3 mov m4v mp4 mpeg avi ogg oga ogv wmv ico',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 'private',
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'file_generic',
-      'weight' => 8,
+      'type' => 'media_generic',
+      'weight' => 9,
     ),
   );
 
@@ -484,7 +490,7 @@ function sngr_field_bases_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -524,7 +530,7 @@ function sngr_field_bases_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -547,7 +553,7 @@ function sngr_field_bases_field_default_field_instances() {
         'size' => 120,
       ),
       'type' => 'email_textfield',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -563,7 +569,7 @@ function sngr_field_bases_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -599,9 +605,12 @@ function sngr_field_bases_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -642,46 +651,6 @@ function sngr_field_bases_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'node-institucion-field_extension_telefonica'.
-  $field_instances['node-institucion-field_extension_telefonica'] = array(
-    'bundle' => 'institucion',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_extension_telefonica',
-    'label' => 'Extensión telefónica',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 50,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
     ),
   );
 
@@ -740,7 +709,7 @@ function sngr_field_bases_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -780,7 +749,7 @@ function sngr_field_bases_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -821,7 +790,7 @@ function sngr_field_bases_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1118,40 +1087,6 @@ function sngr_field_bases_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_extension_telefonica'.
-  $field_instances['user-user-field_extension_telefonica'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_extension_telefonica',
-    'label' => 'Extensión telefónica',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => 0,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 50,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_institucion_user'.
   $field_instances['user-user-field_institucion_user'] = array(
     'bundle' => 'user',
@@ -1188,6 +1123,7 @@ function sngr_field_bases_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Attachment');
   t('Auto inc ambito');
   t('Auto inc eje');
   t('Auto inc lineamiento');
@@ -1197,11 +1133,8 @@ function sngr_field_bases_field_default_field_instances() {
   t('Correo electrónico');
   t('Descripción de la Fuente de Verificación');
   t('Dirección exacta');
-  t('Documento de credenciales');
-  t('Documento que establece funciones, integrantes, entre otros.');
   t('Enlace institucional');
   t('Espacio para describir cuál es la fuente de verificación requerida');
-  t('Extensión telefónica');
   t('Institución');
   t('Integrantes');
   t('Involucrados');

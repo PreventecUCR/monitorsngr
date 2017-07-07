@@ -21,7 +21,7 @@ function sngr_field_bases_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Dirección general',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'field_nombre_jerarca',
       1 => 'field_cargo',
@@ -118,7 +118,6 @@ function sngr_field_bases_field_group_info() {
       4 => 'field_telefono',
       5 => 'field_tratamiento',
       6 => 'picture',
-      7 => 'field_extension_telefonica',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -144,7 +143,7 @@ function sngr_field_bases_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Ubicación',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_direccion_exacta',
     ),
