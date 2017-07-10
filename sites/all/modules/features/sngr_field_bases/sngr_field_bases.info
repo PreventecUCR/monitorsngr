@@ -222,6 +222,7 @@ features[field_instance][] = taxonomy_term-lineamiento-field_auto_inc_lin
 features[field_instance][] = taxonomy_term-producto-field_origen_verificacion
 features[field_instance][] = taxonomy_term-producto-field_prod_coordinacion
 features[field_instance][] = taxonomy_term-producto-field_prod_involucrados
+features[field_instance][] = user-user-field_extensi_n_telef_nica
 features[field_instance][] = user-user-field_institucion_user
 features[node][] = institucion
 features[taxonomy][] = ambito

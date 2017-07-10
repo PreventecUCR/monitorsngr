@@ -254,7 +254,7 @@ function sngr_field_bases_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_attachment',
-    'label' => 'Attachment',
+    'label' => 'Credenciales',
     'required' => 0,
     'settings' => array(
       'file_extensions' => 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps ppsx odt ods odp mp3 mov m4v mp4 mpeg avi ogg oga ogv wmv ico',
@@ -269,6 +269,7 @@ function sngr_field_bases_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
+          0 => 0,
           'audio' => 0,
           'default' => 0,
           'image' => 'image',
@@ -553,7 +554,7 @@ function sngr_field_bases_field_default_field_instances() {
         'size' => 120,
       ),
       'type' => 'email_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -690,7 +691,7 @@ function sngr_field_bases_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 3,
     ),
   );
 
@@ -830,7 +831,7 @@ function sngr_field_bases_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1127,6 +1128,40 @@ function sngr_field_bases_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_extensi_n_telef_nica'.
+  $field_instances['user-user-field_extensi_n_telef_nica'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_extensi_n_telef_nica',
+    'label' => 'Extensión telefónica',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_institucion_user'.
   $field_instances['user-user-field_institucion_user'] = array(
     'bundle' => 'user',
@@ -1163,7 +1198,6 @@ function sngr_field_bases_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Attachment');
   t('Auto inc ambito');
   t('Auto inc eje');
   t('Auto inc lineamiento');
@@ -1171,6 +1205,7 @@ function sngr_field_bases_field_default_field_instances() {
   t('Cargo');
   t('Coordinación');
   t('Correo electrónico');
+  t('Credenciales');
   t('Descripción de la Fuente de Verificación');
   t('Dirección exacta');
   t('Enlace institucional');
