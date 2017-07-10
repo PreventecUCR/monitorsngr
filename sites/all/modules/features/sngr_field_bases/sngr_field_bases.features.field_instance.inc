@@ -654,6 +654,46 @@ function sngr_field_bases_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-institucion-field_extensi_n_telef_nica'.
+  $field_instances['node-institucion-field_extensi_n_telef_nica'] = array(
+    'bundle' => 'institucion',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_extensi_n_telef_nica',
+    'label' => 'Extensión telefónica',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-institucion-field_financiamiento'.
   $field_instances['node-institucion-field_financiamiento'] = array(
     'bundle' => 'institucion',
@@ -1135,6 +1175,7 @@ function sngr_field_bases_field_default_field_instances() {
   t('Dirección exacta');
   t('Enlace institucional');
   t('Espacio para describir cuál es la fuente de verificación requerida');
+  t('Extensión telefónica');
   t('Institución');
   t('Integrantes');
   t('Involucrados');

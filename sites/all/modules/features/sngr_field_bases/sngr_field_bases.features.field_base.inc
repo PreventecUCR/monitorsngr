@@ -1158,6 +1158,30 @@ function sngr_field_bases_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_extensi_n_telef_nica'.
+  $field_bases['field_extensi_n_telef_nica'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_extensi_n_telef_nica',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_extension'.
   $field_bases['field_extension'] = array(
     'active' => 1,
@@ -1173,30 +1197,6 @@ function sngr_field_bases_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'number_float',
-  );
-
-  // Exported field_base: 'field_extension_telefonica'.
-  $field_bases['field_extension_telefonica'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_extension_telefonica',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 50,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
   );
 
   // Exported field_base: 'field_fase'.
